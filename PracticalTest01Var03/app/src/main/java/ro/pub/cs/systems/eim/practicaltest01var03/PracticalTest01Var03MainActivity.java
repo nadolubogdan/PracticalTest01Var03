@@ -43,11 +43,11 @@ public class PracticalTest01Var03MainActivity extends AppCompatActivity {
                     String firstText = editText1.getText().toString();
                     String secondText = editText2.getText().toString();
                     String toPrint = "";
-                    if (checkBox1.isChecked() && editText1.getText() == null) {
-                        Toast.makeText(PracticalTest01Var03MainActivity.this, "complete first text", Toast.LENGTH_LONG).show();
+                    if (checkBox1.isChecked() && firstText.matches("")) {
+                        Toast.makeText(PracticalTest01Var03MainActivity.this, "complete first text", Toast.LENGTH_SHORT).show();
                     }
-                    if (checkBox2.isChecked() && secondText == "") {
-                        Toast.makeText(getApplicationContext(), "complete second text", Toast.LENGTH_LONG).show();
+                    if (checkBox2.isChecked() && secondText.matches("")) {
+                        Toast.makeText(getApplicationContext(), "complete second text", Toast.LENGTH_SHORT).show();
                     }
                     if (checkBox1.isChecked() && firstText != null) {
                         toPrint += firstText;
