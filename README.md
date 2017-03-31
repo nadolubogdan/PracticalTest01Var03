@@ -1,1 +1,2 @@
-# PracticalTest01Var03
+Nadolu Bogdan Ionut
+341 C1
